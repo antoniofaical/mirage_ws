@@ -1,0 +1,24 @@
+[0.381s] Invoking command in '/home/antoniofaical/mirage_ws/src/mirage_yolo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/mirage_yolo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mirage_yolo build --build-base /home/antoniofaical/mirage_ws/build/mirage_yolo/build install --record /home/antoniofaical/mirage_ws/build/mirage_yolo/install.log --single-version-externally-managed install_data
+[0.536s] running egg_info
+[0.547s] writing ../../build/mirage_yolo/mirage_yolo.egg-info/PKG-INFO
+[0.547s] writing dependency_links to ../../build/mirage_yolo/mirage_yolo.egg-info/dependency_links.txt
+[0.547s] writing entry points to ../../build/mirage_yolo/mirage_yolo.egg-info/entry_points.txt
+[0.547s] writing requirements to ../../build/mirage_yolo/mirage_yolo.egg-info/requires.txt
+[0.547s] writing top-level names to ../../build/mirage_yolo/mirage_yolo.egg-info/top_level.txt
+[0.569s] reading manifest file '../../build/mirage_yolo/mirage_yolo.egg-info/SOURCES.txt'
+[0.570s] writing manifest file '../../build/mirage_yolo/mirage_yolo.egg-info/SOURCES.txt'
+[0.570s] running build
+[0.570s] running build_py
+[0.570s] running install
+[0.574s] running install_lib
+[0.585s] running install_data
+[0.585s] running install_egg_info
+[0.597s] removing '/home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo-0.0.0-py3.12.egg-info' (and everything under it)
+[0.597s] Copying ../../build/mirage_yolo/mirage_yolo.egg-info to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo-0.0.0-py3.12.egg-info
+[0.597s] running install_scripts
+[0.670s] Installing camera_node script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+[0.670s] Installing yolo_listener script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+[0.670s] Installing yolo_node script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+[0.670s] Installing yolo_visualizer script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+[0.670s] writing list of installed files to '/home/antoniofaical/mirage_ws/build/mirage_yolo/install.log'
+[0.684s] Invoked command in '/home/antoniofaical/mirage_ws/src/mirage_yolo' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/mirage_yolo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mirage_yolo build --build-base /home/antoniofaical/mirage_ws/build/mirage_yolo/build install --record /home/antoniofaical/mirage_ws/build/mirage_yolo/install.log --single-version-externally-managed install_data

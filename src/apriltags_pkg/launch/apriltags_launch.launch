@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="apriltags_pkg" exec="visual_interface_four_apriltags" output="screen">
+        <param name="apriltag_reference" value="apriltag_TAG36H11"/>
+        <param name="apriltag_target" value="apriltag_TAG16H5"/>
+        <param name="use_virtual_apriltag_as_target" value="false"/>
+    </node>
+</launch>

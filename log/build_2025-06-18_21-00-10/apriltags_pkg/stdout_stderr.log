@@ -1,0 +1,93 @@
+running egg_info
+creating ../../build/apriltags_pkg/apriltags_pkg.egg-info
+writing ../../build/apriltags_pkg/apriltags_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/apriltags_pkg/apriltags_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/apriltags_pkg/apriltags_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/apriltags_pkg/apriltags_pkg.egg-info/requires.txt
+writing top-level names to ../../build/apriltags_pkg/apriltags_pkg.egg-info/top_level.txt
+writing manifest file '../../build/apriltags_pkg/apriltags_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/apriltags_pkg/apriltags_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/apriltags_pkg/apriltags_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/antoniofaical/mirage_ws/build/apriltags_pkg/build
+creating /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib
+creating /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/test_camera_april_robotarm.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/test_plot_camera_and_april.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/cameracalibration.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/real_eyetracker_publisher.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/test_perspective_eyetracker.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/print_image_eyetracker.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/test_plot_camera_and_two_april.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/test_transform_frame.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/pose_estimation_eyetracker.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/einstein_visual_interface.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/test_plot_april_frame.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/__init__.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/dummy_publisher_eyetracker.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/visual_interface.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/visual_interface_with_arrow.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+copying apriltags_pkg/visual_interface_four_apriltags.py -> /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg
+running install
+running install_lib
+creating /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/test_camera_april_robotarm.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/test_plot_camera_and_april.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/cameracalibration.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/real_eyetracker_publisher.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/test_perspective_eyetracker.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/print_image_eyetracker.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/test_plot_camera_and_two_april.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/test_transform_frame.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/pose_estimation_eyetracker.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/einstein_visual_interface.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/test_plot_april_frame.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/__init__.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/dummy_publisher_eyetracker.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/visual_interface.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/visual_interface_with_arrow.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+copying /home/antoniofaical/mirage_ws/build/apriltags_pkg/build/lib/apriltags_pkg/visual_interface_four_apriltags.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_camera_april_robotarm.py to test_camera_april_robotarm.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_plot_camera_and_april.py to test_plot_camera_and_april.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/cameracalibration.py to cameracalibration.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/real_eyetracker_publisher.py to real_eyetracker_publisher.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_perspective_eyetracker.py to test_perspective_eyetracker.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/print_image_eyetracker.py to print_image_eyetracker.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_plot_camera_and_two_april.py to test_plot_camera_and_two_april.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_transform_frame.py to test_transform_frame.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/pose_estimation_eyetracker.py to pose_estimation_eyetracker.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/einstein_visual_interface.py to einstein_visual_interface.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_plot_april_frame.py to test_plot_april_frame.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/dummy_publisher_eyetracker.py to dummy_publisher_eyetracker.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/visual_interface.py to visual_interface.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/visual_interface_with_arrow.py to visual_interface_with_arrow.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/visual_interface_four_apriltags.py to visual_interface_four_apriltags.cpython-312.pyc
+running install_data
+creating /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/ament_index
+creating /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/ament_index/resource_index
+creating /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/ament_index/resource_index/packages
+copying resource/apriltags_pkg -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg
+creating /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg/launch
+copying launch/eyetracker_apriltag_launch.launch.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg/launch
+copying launch/eyetracker_homography.launch.py -> /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg/launch
+running install_egg_info
+Copying ../../build/apriltags_pkg/apriltags_pkg.egg-info to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing dummy_publisher_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing einstein_visual_interface script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing plot_april_frame script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing pose_estimation_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing print_image_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing real_eyetracker_publisher script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing test_camera_april_robotarm script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing test_perspective_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing test_plot_camera_and_april script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing test_plot_camera_and_two_april script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing test_transform_frame script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing visual_interface script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing visual_interface_four_apriltags script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+Installing visual_interface_with_arrow script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+writing list of installed files to '/home/antoniofaical/mirage_ws/build/apriltags_pkg/install.log'

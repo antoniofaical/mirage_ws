@@ -1,0 +1,15 @@
+[console_scripts]
+dummy_publisher_eyetracker = apriltags_pkg.dummy_publisher_eyetracker:main
+einstein_visual_interface = apriltags_pkg.einstein_visual_interface:main
+plot_april_frame = apriltags_pkg.test_plot_april_frame:main
+pose_estimation_eyetracker = apriltags_pkg.pose_estimation_eyetracker:main
+print_image_eyetracker = apriltags_pkg.print_image_eyetracker:main
+real_eyetracker_publisher = apriltags_pkg.real_eyetracker_publisher:main
+test_camera_april_robotarm = apriltags_pkg.test_camera_april_robotarm:main
+test_perspective_eyetracker = apriltags_pkg.test_perspective_eyetracker:main
+test_plot_camera_and_april = apriltags_pkg.test_plot_camera_and_april:main
+test_plot_camera_and_two_april = apriltags_pkg.test_plot_camera_and_two_april:main
+test_transform_frame = apriltags_pkg.test_transform_frame:main
+visual_interface = apriltags_pkg.visual_interface:main
+visual_interface_four_apriltags = apriltags_pkg.visual_interface_four_apriltags:main
+visual_interface_with_arrow = apriltags_pkg.visual_interface_with_arrow:main

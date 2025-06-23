@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="apriltags_pkg" exec="dummy_publisher_eyetracker" output="screen">
+        <param name="apriltag_reference" value="apriltag_TAG36H11"/>
+        <param name="apriltag_target" value="apriltag_TAG16H5"/>
+    </node>
+</launch>

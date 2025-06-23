@@ -1,0 +1,5 @@
+[console_scripts]
+camera_node = mirage_yolo.camera_node:main
+yolo_listener = mirage_yolo.yolo_listener_node:main
+yolo_node = mirage_yolo.yolo_node:main
+yolo_visualizer = mirage_yolo.yolo_visualizer_node:main

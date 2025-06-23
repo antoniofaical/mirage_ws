@@ -1,0 +1,34 @@
+[0.629s] Invoking command in '/home/antoniofaical/mirage_ws/src/apriltags_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/apriltags_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/apriltags_pkg build --build-base /home/antoniofaical/mirage_ws/build/apriltags_pkg/build install --record /home/antoniofaical/mirage_ws/build/apriltags_pkg/install.log --single-version-externally-managed install_data
+[0.794s] running egg_info
+[0.806s] writing ../../build/apriltags_pkg/apriltags_pkg.egg-info/PKG-INFO
+[0.806s] writing dependency_links to ../../build/apriltags_pkg/apriltags_pkg.egg-info/dependency_links.txt
+[0.806s] writing entry points to ../../build/apriltags_pkg/apriltags_pkg.egg-info/entry_points.txt
+[0.806s] writing requirements to ../../build/apriltags_pkg/apriltags_pkg.egg-info/requires.txt
+[0.806s] writing top-level names to ../../build/apriltags_pkg/apriltags_pkg.egg-info/top_level.txt
+[0.831s] reading manifest file '../../build/apriltags_pkg/apriltags_pkg.egg-info/SOURCES.txt'
+[0.831s] writing manifest file '../../build/apriltags_pkg/apriltags_pkg.egg-info/SOURCES.txt'
+[0.832s] running build
+[0.832s] running build_py
+[0.832s] running install
+[0.837s] running install_lib
+[0.850s] running install_data
+[0.850s] running install_egg_info
+[0.863s] removing '/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.863s] Copying ../../build/apriltags_pkg/apriltags_pkg.egg-info to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg-0.0.0-py3.12.egg-info
+[0.864s] running install_scripts
+[0.947s] Installing dummy_publisher_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.947s] Installing einstein_visual_interface script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.947s] Installing plot_april_frame script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.947s] Installing pose_estimation_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.947s] Installing print_image_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing real_eyetracker_publisher script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing test_camera_april_robotarm script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing test_perspective_eyetracker script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing test_plot_camera_and_april script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing test_plot_camera_and_two_april script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing test_transform_frame script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing visual_interface script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing visual_interface_four_apriltags script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] Installing visual_interface_with_arrow script to /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg
+[0.948s] writing list of installed files to '/home/antoniofaical/mirage_ws/build/apriltags_pkg/install.log'
+[0.964s] Invoked command in '/home/antoniofaical/mirage_ws/src/apriltags_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/apriltags_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/apriltags_pkg build --build-base /home/antoniofaical/mirage_ws/build/apriltags_pkg/build install --record /home/antoniofaical/mirage_ws/build/apriltags_pkg/install.log --single-version-externally-managed install_data

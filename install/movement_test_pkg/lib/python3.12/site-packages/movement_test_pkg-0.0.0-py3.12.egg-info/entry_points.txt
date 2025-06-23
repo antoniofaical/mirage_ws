@@ -1,0 +1,7 @@
+[console_scripts]
+input_motion = movement_test_pkg.input_motion:main
+publisher_apriltag_transform_node = movement_test_pkg.publisher_apriltag_transform_node:main
+publisher_cartesian_pose = movement_test_pkg.publisher_cartesian_pose:main
+test_input_motion_apriltag_absolute_pos = movement_test_pkg.test_input_motion_apriltag_absolute_pos:main
+test_input_motion_apriltag_relative_pos = movement_test_pkg.test_input_motion_apriltag_relative_pos:main
+test_motion_pick_place = movement_test_pkg.test_motion_pick_place:main

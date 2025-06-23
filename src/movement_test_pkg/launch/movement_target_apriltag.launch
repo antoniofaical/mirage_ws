@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="movement_test_pkg" exec="publisher_apriltag_transform_node" output="screen">
+        <param name="frame_reference" value="apriltag_TAG36H11"/>
+        <param name="frame_target" value="apriltag_TAG16H5"/>
+    </node>
+    <node pkg="movement_test_pkg" exec="publisher_cartesian_pose" output="screen">
+        <!-- Add any necessary parameters or remappings here -->
+    </node>
+</launch>

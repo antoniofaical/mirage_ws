@@ -1,0 +1,26 @@
+[0.701s] Invoking command in '/home/antoniofaical/mirage_ws/src/movement_test_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/movement_test_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/movement_test_pkg build --build-base /home/antoniofaical/mirage_ws/build/movement_test_pkg/build install --record /home/antoniofaical/mirage_ws/build/movement_test_pkg/install.log --single-version-externally-managed install_data
+[0.851s] running egg_info
+[0.862s] writing ../../build/movement_test_pkg/movement_test_pkg.egg-info/PKG-INFO
+[0.863s] writing dependency_links to ../../build/movement_test_pkg/movement_test_pkg.egg-info/dependency_links.txt
+[0.863s] writing entry points to ../../build/movement_test_pkg/movement_test_pkg.egg-info/entry_points.txt
+[0.863s] writing requirements to ../../build/movement_test_pkg/movement_test_pkg.egg-info/requires.txt
+[0.863s] writing top-level names to ../../build/movement_test_pkg/movement_test_pkg.egg-info/top_level.txt
+[0.887s] reading manifest file '../../build/movement_test_pkg/movement_test_pkg.egg-info/SOURCES.txt'
+[0.887s] writing manifest file '../../build/movement_test_pkg/movement_test_pkg.egg-info/SOURCES.txt'
+[0.887s] running build
+[0.887s] running build_py
+[0.887s] running install
+[0.892s] running install_lib
+[0.904s] running install_data
+[0.905s] running install_egg_info
+[0.917s] removing '/home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/python3.12/site-packages/movement_test_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.917s] Copying ../../build/movement_test_pkg/movement_test_pkg.egg-info to /home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/python3.12/site-packages/movement_test_pkg-0.0.0-py3.12.egg-info
+[0.918s] running install_scripts
+[0.996s] Installing input_motion script to /home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/movement_test_pkg
+[0.997s] Installing publisher_apriltag_transform_node script to /home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/movement_test_pkg
+[0.997s] Installing publisher_cartesian_pose script to /home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/movement_test_pkg
+[0.997s] Installing test_input_motion_apriltag_absolute_pos script to /home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/movement_test_pkg
+[0.997s] Installing test_input_motion_apriltag_relative_pos script to /home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/movement_test_pkg
+[0.997s] Installing test_motion_pick_place script to /home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/movement_test_pkg
+[0.997s] writing list of installed files to '/home/antoniofaical/mirage_ws/build/movement_test_pkg/install.log'
+[1.013s] Invoked command in '/home/antoniofaical/mirage_ws/src/movement_test_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/movement_test_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/movement_test_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/movement_test_pkg build --build-base /home/antoniofaical/mirage_ws/build/movement_test_pkg/build install --record /home/antoniofaical/mirage_ws/build/movement_test_pkg/install.log --single-version-externally-managed install_data

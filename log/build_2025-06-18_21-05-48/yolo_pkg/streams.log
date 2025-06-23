@@ -1,0 +1,49 @@
+[0.631s] Invoking command in '/home/antoniofaical/mirage_ws/src/yolo_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/yolo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_pkg build --build-base /home/antoniofaical/mirage_ws/build/yolo_pkg/build install --record /home/antoniofaical/mirage_ws/build/yolo_pkg/install.log --single-version-externally-managed install_data
+[0.774s] running egg_info
+[0.774s] creating ../../build/yolo_pkg/yolo_pkg.egg-info
+[0.784s] writing ../../build/yolo_pkg/yolo_pkg.egg-info/PKG-INFO
+[0.784s] writing dependency_links to ../../build/yolo_pkg/yolo_pkg.egg-info/dependency_links.txt
+[0.784s] writing entry points to ../../build/yolo_pkg/yolo_pkg.egg-info/entry_points.txt
+[0.784s] writing requirements to ../../build/yolo_pkg/yolo_pkg.egg-info/requires.txt
+[0.784s] writing top-level names to ../../build/yolo_pkg/yolo_pkg.egg-info/top_level.txt
+[0.784s] writing manifest file '../../build/yolo_pkg/yolo_pkg.egg-info/SOURCES.txt'
+[0.804s] reading manifest file '../../build/yolo_pkg/yolo_pkg.egg-info/SOURCES.txt'
+[0.805s] writing manifest file '../../build/yolo_pkg/yolo_pkg.egg-info/SOURCES.txt'
+[0.805s] running build
+[0.805s] running build_py
+[0.805s] creating /home/antoniofaical/mirage_ws/build/yolo_pkg/build
+[0.805s] creating /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib
+[0.805s] creating /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg
+[0.805s] copying yolo_pkg/camera_node.py -> /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg
+[0.805s] copying yolo_pkg/__init__.py -> /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg
+[0.805s] copying yolo_pkg/yolo_listener_node.py -> /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg
+[0.805s] copying yolo_pkg/yolo_visualizer_node.py -> /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg
+[0.805s] copying yolo_pkg/yolo_node.py -> /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg
+[0.805s] running install
+[0.809s] running install_lib
+[0.819s] creating /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg
+[0.819s] copying /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg/camera_node.py -> /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg
+[0.819s] copying /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg/__init__.py -> /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg
+[0.819s] copying /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg/yolo_listener_node.py -> /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg
+[0.820s] copying /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg/yolo_visualizer_node.py -> /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg
+[0.820s] copying /home/antoniofaical/mirage_ws/build/yolo_pkg/build/lib/yolo_pkg/yolo_node.py -> /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg
+[0.820s] byte-compiling /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg/camera_node.py to camera_node.cpython-312.pyc
+[0.820s] byte-compiling /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg/__init__.py to __init__.cpython-312.pyc
+[0.820s] byte-compiling /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg/yolo_listener_node.py to yolo_listener_node.cpython-312.pyc
+[0.820s] byte-compiling /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg/yolo_visualizer_node.py to yolo_visualizer_node.cpython-312.pyc
+[0.821s] byte-compiling /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg/yolo_node.py to yolo_node.cpython-312.pyc
+[0.822s] running install_data
+[0.822s] creating /home/antoniofaical/mirage_ws/install/yolo_pkg/share/ament_index
+[0.822s] creating /home/antoniofaical/mirage_ws/install/yolo_pkg/share/ament_index/resource_index
+[0.822s] creating /home/antoniofaical/mirage_ws/install/yolo_pkg/share/ament_index/resource_index/packages
+[0.823s] copying resource/yolo_pkg -> /home/antoniofaical/mirage_ws/install/yolo_pkg/share/ament_index/resource_index/packages
+[0.823s] copying package.xml -> /home/antoniofaical/mirage_ws/install/yolo_pkg/share/yolo_pkg
+[0.823s] running install_egg_info
+[0.833s] Copying ../../build/yolo_pkg/yolo_pkg.egg-info to /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages/yolo_pkg-0.0.0-py3.12.egg-info
+[0.833s] running install_scripts
+[0.903s] Installing camera_node script to /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/yolo_pkg
+[0.903s] Installing yolo_listener script to /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/yolo_pkg
+[0.903s] Installing yolo_node script to /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/yolo_pkg
+[0.903s] Installing yolo_visualizer script to /home/antoniofaical/mirage_ws/install/yolo_pkg/lib/yolo_pkg
+[0.903s] writing list of installed files to '/home/antoniofaical/mirage_ws/build/yolo_pkg/install.log'
+[0.918s] Invoked command in '/home/antoniofaical/mirage_ws/src/yolo_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoniofaical/mirage_ws/build/yolo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoniofaical/mirage_ws/install/yolo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_pkg build --build-base /home/antoniofaical/mirage_ws/build/yolo_pkg/build install --record /home/antoniofaical/mirage_ws/build/yolo_pkg/install.log --single-version-externally-managed install_data

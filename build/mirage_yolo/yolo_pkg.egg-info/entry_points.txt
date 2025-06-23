@@ -1,0 +1,5 @@
+[console_scripts]
+camera_node = yolo_pkg.camera_node:main
+yolo_listener = yolo_pkg.yolo_listener_node:main
+yolo_node = yolo_pkg.yolo_node:main
+yolo_visualizer = yolo_pkg.yolo_visualizer_node:main

@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/mirage_yolo/mirage_yolo.egg-info
+writing ../../build/mirage_yolo/mirage_yolo.egg-info/PKG-INFO
+writing dependency_links to ../../build/mirage_yolo/mirage_yolo.egg-info/dependency_links.txt
+writing entry points to ../../build/mirage_yolo/mirage_yolo.egg-info/entry_points.txt
+writing requirements to ../../build/mirage_yolo/mirage_yolo.egg-info/requires.txt
+writing top-level names to ../../build/mirage_yolo/mirage_yolo.egg-info/top_level.txt
+writing manifest file '../../build/mirage_yolo/mirage_yolo.egg-info/SOURCES.txt'
+reading manifest file '../../build/mirage_yolo/mirage_yolo.egg-info/SOURCES.txt'
+writing manifest file '../../build/mirage_yolo/mirage_yolo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/antoniofaical/mirage_ws/build/mirage_yolo/build
+creating /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib
+creating /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo
+copying mirage_yolo/camera_node.py -> /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo
+copying mirage_yolo/detection_listener_node.py -> /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo
+copying mirage_yolo/__init__.py -> /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo
+copying mirage_yolo/yolo_node.py -> /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo
+running install
+running install_lib
+creating /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo
+copying /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo/camera_node.py -> /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo
+copying /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo/detection_listener_node.py -> /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo
+copying /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo/__init__.py -> /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo
+copying /home/antoniofaical/mirage_ws/build/mirage_yolo/build/lib/mirage_yolo/yolo_node.py -> /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo
+byte-compiling /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo/camera_node.py to camera_node.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo/detection_listener_node.py to detection_listener_node.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo/yolo_node.py to yolo_node.cpython-312.pyc
+running install_data
+creating /home/antoniofaical/mirage_ws/install/mirage_yolo/share
+creating /home/antoniofaical/mirage_ws/install/mirage_yolo/share/ament_index
+creating /home/antoniofaical/mirage_ws/install/mirage_yolo/share/ament_index/resource_index
+creating /home/antoniofaical/mirage_ws/install/mirage_yolo/share/ament_index/resource_index/packages
+copying resource/mirage_yolo -> /home/antoniofaical/mirage_ws/install/mirage_yolo/share/ament_index/resource_index/packages
+creating /home/antoniofaical/mirage_ws/install/mirage_yolo/share/mirage_yolo
+copying package.xml -> /home/antoniofaical/mirage_ws/install/mirage_yolo/share/mirage_yolo
+running install_egg_info
+Copying ../../build/mirage_yolo/mirage_yolo.egg-info to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo-0.0.0-py3.12.egg-info
+running install_scripts
+Installing camera_node script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+Installing detection_listener_node script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+Installing yolo_node script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+writing list of installed files to '/home/antoniofaical/mirage_ws/build/mirage_yolo/install.log'

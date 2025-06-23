@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/mirage_yolo/mirage_yolo.egg-info/PKG-INFO
+writing dependency_links to ../../build/mirage_yolo/mirage_yolo.egg-info/dependency_links.txt
+writing entry points to ../../build/mirage_yolo/mirage_yolo.egg-info/entry_points.txt
+writing requirements to ../../build/mirage_yolo/mirage_yolo.egg-info/requires.txt
+writing top-level names to ../../build/mirage_yolo/mirage_yolo.egg-info/top_level.txt
+reading manifest file '../../build/mirage_yolo/mirage_yolo.egg-info/SOURCES.txt'
+writing manifest file '../../build/mirage_yolo/mirage_yolo.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying package.xml -> /home/antoniofaical/mirage_ws/install/mirage_yolo/share/mirage_yolo
+running install_egg_info
+removing '/home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/mirage_yolo/mirage_yolo.egg-info to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/python3.12/site-packages/mirage_yolo-0.0.0-py3.12.egg-info
+running install_scripts
+Installing camera_node script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+Installing yolo_listener script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+Installing yolo_node script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+Installing yolo_visualizer script to /home/antoniofaical/mirage_ws/install/mirage_yolo/lib/mirage_yolo
+writing list of installed files to '/home/antoniofaical/mirage_ws/build/mirage_yolo/install.log'
