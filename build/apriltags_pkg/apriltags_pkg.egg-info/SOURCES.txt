@@ -13,6 +13,8 @@ apriltags_pkg/__init__.py
 apriltags_pkg/cameracalibration.py
 apriltags_pkg/dummy_publisher_eyetracker.py
 apriltags_pkg/einstein_visual_interface.py
+apriltags_pkg/mock_cursor_eyetracker_publisher.py
+apriltags_pkg/mock_robot_pose_publisher.py
 apriltags_pkg/pose_estimation_eyetracker.py
 apriltags_pkg/print_image_eyetracker.py
 apriltags_pkg/real_eyetracker_publisher.py
@@ -25,6 +27,7 @@ apriltags_pkg/test_transform_frame.py
 apriltags_pkg/visual_interface.py
 apriltags_pkg/visual_interface_four_apriltags.py
 apriltags_pkg/visual_interface_with_arrow.py
+launch/FHD_eyetracker_apriltag_launch.launch.py
 launch/eyetracker_apriltag_launch.launch.py
 launch/eyetracker_homography.launch.py
 resource/apriltags_pkg

@@ -408,13 +408,96 @@ class VisualInterfaceNode(Node):
                 self.start_time=time()
                 self.current_state=State.WAIT_ROBOTMOVING
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
             elif(self.current_state==State.WAIT_ROBOTMOVING):
 
                 elapsed_time = time() - self.start_time
 
-                self.white_background[(self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))):(self.image_gripper_h+self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))),  
-                    (self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1)))):(self.image_gripper_w+self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1))))] = self.image_gripper
+            #     self.white_background[(self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))):(self.image_gripper_h+self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))),  
+            #         (self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1)))):(self.image_gripper_w+self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1))))] = self.image_gripper
                 
+
+            # #   gostaria na verdade de fazer algo na linha de:
+            # #   for i in range(1,ROBOT_STEP+1):
+            #         # if(i%2!=0):
+            # #           "plot self.image_gripper em (self.robot_pose.pose.position.x,self.robot_pose.pose.position.y)"
+
+            #     for i in range(1,ROBOT_STEP+1):
+            #         if(i%2!=0):
+            #             cv2.arrowedLine(self.white_background,(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*i)+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*i)+int(self.image_36H11_all_h/2)),(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_h/2)),(255,0,0),2)
+                
+                # === 1. Calcular coordenadas da interface (px) ===
+                offset_x = self.w_distance + self.image_36H11_all_w / 2
+                offset_y = self.h_distance + self.image_36H11_all_h / 2
+
+                # Pose atual (m) → interface (px)
+                x_real = self.robot_pose.pose.position.x
+                y_real = self.robot_pose.pose.position.y
+                x_now = int((x_real * self.CC_X_I / CC_X_R) + offset_x)
+                y_now = int((y_real * self.CC_Y_I / CC_Y_R) + offset_y)
+
+                # Pose final (px)
+                x_final = self.gripper_final_x
+                y_final = self.gripper_final_y
+
+                # === 2. Desenhar imagem do gripper na pose atual ===
+                x_now = max(0, min(x_now, self.interface_width - self.image_gripper_w))
+                y_now = max(0, min(y_now, self.interface_height - self.image_gripper_h))
+                self.white_background[y_now:y_now+self.image_gripper_h, x_now:x_now+self.image_gripper_w] = self.image_gripper
+
+                # === 3. Desenhar gripper fantasma no destino ===
+                x_final = max(0, min(x_final, self.interface_width - self.image_gripper_w))
+                y_final = max(0, min(y_final, self.interface_height - self.image_gripper_h))
+
+                roi = self.white_background[y_final:y_final+self.image_gripper_h, x_final:x_final+self.image_gripper_w]
+                blended = cv2.addWeighted(roi, 1.0, self.image_gripper, 0.35, 0)
+                self.white_background[y_final:y_final+self.image_gripper_h, x_final:x_final+self.image_gripper_w] = blended
+
+                # === 4. Desenhar flechas ao longo do caminho ===
+                for i in range(1, ROBOT_STEP + 1):
+                    if i % 2 != 0:
+                        px1 = int(self.gripper_init_x + ((self.gripper_final_x - self.gripper_init_x) / ROBOT_STEP) * i) + int(self.image_36H11_all_w / 2)
+                        py1 = int(self.gripper_init_y + ((self.gripper_final_y - self.gripper_init_y) / ROBOT_STEP) * i) + int(self.image_36H11_all_h / 2)
+                        px2 = int(self.gripper_init_x + ((self.gripper_final_x - self.gripper_init_x) / ROBOT_STEP) * (i + 1)) + int(self.image_36H11_all_w / 2)
+                        py2 = int(self.gripper_init_y + ((self.gripper_final_y - self.gripper_init_y) / ROBOT_STEP) * (i + 1)) + int(self.image_36H11_all_h / 2)
+                        cv2.arrowedLine(self.white_background, (px1, py1), (px2, py2), (255, 0, 0), 2)
+
+
                 if(self.old_state==State.PICK):
                     self.time_wait=18
                     cv2.circle(self.white_background, (self.old_target_x, self.old_target_y+OVERSHOOT_Y), int(0.08*self.interface_height), (255, 0, 0), 15)
@@ -424,9 +507,6 @@ class VisualInterfaceNode(Node):
                 if(self.old_state==State.TEXT_MOVE):
                     self.time_wait=5
 
-                for i in range(1,ROBOT_STEP+1):
-                    if(i%2!=0):
-                        cv2.arrowedLine(self.white_background,(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*i)+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*i)+int(self.image_36H11_all_h/2)),(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_h/2)),(255,0,0),2)
                 
                 cv2.circle(self.white_background, (target_x, target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 255), 15)
 
@@ -452,6 +532,8 @@ class VisualInterfaceNode(Node):
             self.target_point.point.y=0
             self.current_state=State.OBSERVATION
             self.choice=State.PLACE
+
+
 
     def declaring_apriltags_and_variables(self):
 

@@ -7,6 +7,7 @@
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_plot_camera_and_two_april.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_transform_frame.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/pose_estimation_eyetracker.py
+/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/mock_robot_pose_publisher.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/einstein_visual_interface.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/test_plot_april_frame.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__init__.py
@@ -14,6 +15,7 @@
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/visual_interface.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/visual_interface_with_arrow.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/visual_interface_four_apriltags.py
+/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/mock_cursor_eyetracker_publisher.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/test_camera_april_robotarm.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/test_plot_camera_and_april.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/cameracalibration.cpython-312.pyc
@@ -23,6 +25,7 @@
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/test_plot_camera_and_two_april.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/test_transform_frame.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/pose_estimation_eyetracker.cpython-312.pyc
+/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/mock_robot_pose_publisher.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/einstein_visual_interface.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/test_plot_april_frame.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/__init__.cpython-312.pyc
@@ -30,10 +33,12 @@
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/visual_interface.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/visual_interface_with_arrow.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/visual_interface_four_apriltags.cpython-312.pyc
+/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg/__pycache__/mock_cursor_eyetracker_publisher.cpython-312.pyc
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/ament_index/resource_index/packages/apriltags_pkg
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg/package.xml
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg/launch/eyetracker_apriltag_launch.launch.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg/launch/eyetracker_homography.launch.py
+/home/antoniofaical/mirage_ws/install/apriltags_pkg/share/apriltags_pkg/launch/FHD_eyetracker_apriltag_launch.launch.py
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg-0.0.0-py3.12.egg-info/zip-safe
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg-0.0.0-py3.12.egg-info/top_level.txt
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg-0.0.0-py3.12.egg-info/SOURCES.txt
@@ -43,6 +48,8 @@
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/python3.12/site-packages/apriltags_pkg-0.0.0-py3.12.egg-info/dependency_links.txt
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg/dummy_publisher_eyetracker
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg/einstein_visual_interface
+/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg/mock_cursor_eyetracker_publisher
+/home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg/mock_robot_pose_publisher
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg/plot_april_frame
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg/pose_estimation_eyetracker
 /home/antoniofaical/mirage_ws/install/apriltags_pkg/lib/apriltags_pkg/print_image_eyetracker

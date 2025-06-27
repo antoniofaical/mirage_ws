@@ -1,6 +1,8 @@
 [console_scripts]
 dummy_publisher_eyetracker = apriltags_pkg.dummy_publisher_eyetracker:main
 einstein_visual_interface = apriltags_pkg.einstein_visual_interface:main
+mock_cursor_eyetracker_publisher = apriltags_pkg.mock_cursor_eyetracker_publisher:main
+mock_robot_pose_publisher = apriltags_pkg.mock_robot_pose_publisher:main
 plot_april_frame = apriltags_pkg.test_plot_april_frame:main
 pose_estimation_eyetracker = apriltags_pkg.pose_estimation_eyetracker:main
 print_image_eyetracker = apriltags_pkg.print_image_eyetracker:main
