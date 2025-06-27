@@ -2,6 +2,8 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 
+# a função desse nó é logar no console as detecções do YOLO_node (através de sub no topic /yolo/detections)
+
 class YoloListener(Node):
     def __init__(self):
         super().__init__('yolo_listener')
