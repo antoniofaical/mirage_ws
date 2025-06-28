@@ -33,7 +33,6 @@ class CursorPositionPublisher(Node):
                     key, value = line.strip().split('=')
                     geom_dict[key] = int(value)
 
-            self.get_logger().info(f"geom_dict: {geom_dict}")
             x = geom_dict['X']
             y = geom_dict['Y']
             width = geom_dict['WIDTH']

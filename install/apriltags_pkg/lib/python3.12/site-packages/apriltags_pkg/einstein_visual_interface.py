@@ -75,6 +75,7 @@ class VisualInterfaceNode(Node):
         self.declaring_apriltags_and_variables()
         self.generating_default_interface()
 
+        # self.timer = self.create_timer(0.5, self.timer_callback)
         self.timer = self.create_timer(0.05, self.timer_callback)
 
         cv2.namedWindow("Interface", 1)
@@ -118,6 +119,7 @@ class VisualInterfaceNode(Node):
         #Robot_point 
         self.target_pose_msg = PoseStamped()
 
+
     def timer_callback(self):
 
         # Reset the white background
@@ -139,12 +141,19 @@ class VisualInterfaceNode(Node):
         target_x = int((self.target_point.point.x))
         target_y = int((self.target_point.point.y))
 
+        # Draw the robot dinamically with its position in space, independent of state
+        self.draw_gripper_at_pose()
+
         if ((not self.use_virtual_apriltag_as_target)):
 
             if (self.current_state==State.OBSERVATION):
 
-                self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
-                #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
                 cv2.circle(self.white_background, (target_x, target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 255), 15)
                 self.start_time=time()
                 self.current_state=State.TIMER
@@ -152,8 +161,12 @@ class VisualInterfaceNode(Node):
             elif(self.current_state==State.TIMER):
 
                 elapsed_time = time() - self.start_time
-                self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
-                #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
                 cv2.circle(self.white_background, (target_x, target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 255), 15)
                 if(elapsed_time>=self.count_time):
                     angle = int(((elapsed_time-self.count_time) / self.update_time) * 360)
@@ -171,8 +184,12 @@ class VisualInterfaceNode(Node):
 
             elif(self.current_state==State.MENU):
 
-                self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
-                #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
                 cv2.circle(self.white_background, (self.old_target_x, self.old_target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 0), 15)
                 cv2.line(self.white_background,(self.old_target_x-30,self.old_target_y),(self.old_target_x+30,self.old_target_y),(255,255,255),1) # linha de baixo
                 cv2.line(self.white_background,(self.old_target_x,self.old_target_y-30),(self.old_target_x,self.old_target_y+30),(255,255,255),1)
@@ -274,8 +291,12 @@ class VisualInterfaceNode(Node):
 
             elif(self.current_state==State.TEXT_MOVE):
                 cv2.circle(self.white_background, (target_x, target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 255), 15)
-                self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
-                #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
+                
+
+                ####################################################################### #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
                 # cv2.circle(self.white_background, (self.old_target_x, self.old_target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 0), 15)
                 # cv2.putText(self.white_background,'MOVE HERE?',(self.old_target_x-100,self.old_target_y-100),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
                 # cv2.putText(self.white_background,'YES',(self.old_target_x+150,self.old_target_y+OVERSHOOT_Y),cv2.FONT_HERSHEY_SIMPLEX,1,(0,100,0),3)
@@ -408,126 +429,88 @@ class VisualInterfaceNode(Node):
                 self.start_time=time()
                 self.current_state=State.WAIT_ROBOTMOVING
 
+            elif self.current_state == State.WAIT_ROBOTMOVING:
 
+                # === 1. Plotar phantom no destino, com cor dependendo do estado anterior ===
+                if self.old_state == State.PICK:
+                    phantom_color = (255, 100, 100)  # Azul mais claro
+                elif self.old_state == State.PLACE:
+                    phantom_color = (100, 100, 255)  # Vermelho mais claro
+                else:  # TEXT_MOVE ou outros
+                    phantom_color = (200, 200, 200)  # Cinza claro
 
+                def colorize_gripper(gripper_img, color):
+                    """Aplica uma coloração sobre o gripper, mantendo intensidade."""
+                    gripper_norm = gripper_img.astype(float) / 255.0
+                    colored = gripper_norm * (np.array(color) / 255.0)
+                    return np.clip(colored * 255.0, 0, 255).astype(np.uint8)
 
+                # Aplicar coloração ao gripper phantom
+                colored_phantom = colorize_gripper(self.image_gripper, phantom_color)
 
+                # Centralizar coordenadas
+                x_final = int(self.gripper_final_x - self.image_gripper_w / 2)
+                y_final = int(self.gripper_final_y - self.image_gripper_h / 2)
 
-
-
-
-
-
-
-
-
-
-
-
- 
-            elif(self.current_state==State.WAIT_ROBOTMOVING):
-
-                elapsed_time = time() - self.start_time
-                
-
-
-
-
-
-
-
-
-
-
-
-                # === 1. Calcular coordenadas da interface (px) ===
-                offset_x = self.w_distance + self.image_36H11_all_w / 2
-                offset_y = self.h_distance + self.image_36H11_all_h / 2
-
-                # Pose atual (m) → interface (px)
-                x_real = self.robot_pose.pose.position.x
-                y_real = self.robot_pose.pose.position.y
-                x_now = int((x_real * self.CC_X_I / CC_X_R) + offset_x)
-                y_now = int((y_real * self.CC_Y_I / CC_Y_R) + offset_y)
-
-                # Pose final (px)
-                x_final = self.gripper_final_x
-                y_final = self.gripper_final_y
-
-                # === 2. Desenhar imagem do gripper na pose atual ===
-                x_now = max(0, min(x_now, self.interface_width - self.image_gripper_w))
-                y_now = max(0, min(y_now, self.interface_height - self.image_gripper_h))
-                self.white_background[y_now:y_now+self.image_gripper_h, x_now:x_now+self.image_gripper_w] = self.image_gripper
-
-                # === 3. Desenhar gripper fantasma no destino ===
+                # Evitar estouro de borda
                 x_final = max(0, min(x_final, self.interface_width - self.image_gripper_w))
                 y_final = max(0, min(y_final, self.interface_height - self.image_gripper_h))
 
-                roi = self.white_background[y_final:y_final+self.image_gripper_h, x_final:x_final+self.image_gripper_w]
-                blended = cv2.addWeighted(roi, 1.0, self.image_gripper, 0.35, 0)
-                self.white_background[y_final:y_final+self.image_gripper_h, x_final:x_final+self.image_gripper_w] = blended
+                roi = self.white_background[y_final:y_final + self.image_gripper_h, x_final:x_final + self.image_gripper_w]
+                blended = cv2.addWeighted(roi, 0.3, colored_phantom, 0.7, 0)
+                self.white_background[y_final:y_final + self.image_gripper_h, x_final:x_final + self.image_gripper_w] = blended
 
-                # === 4. Desenhar flechas ao longo do caminho ===
+                # === 2. Plotar setas entre posição atual e final ===
                 for i in range(1, ROBOT_STEP + 1):
                     if i % 2 != 0:
-                        px1 = int(self.gripper_init_x + ((self.gripper_final_x - self.gripper_init_x) / ROBOT_STEP) * i) + int(self.image_36H11_all_w / 2)
-                        py1 = int(self.gripper_init_y + ((self.gripper_final_y - self.gripper_init_y) / ROBOT_STEP) * i) + int(self.image_36H11_all_h / 2)
-                        px2 = int(self.gripper_init_x + ((self.gripper_final_x - self.gripper_init_x) / ROBOT_STEP) * (i + 1)) + int(self.image_36H11_all_w / 2)
-                        py2 = int(self.gripper_init_y + ((self.gripper_final_y - self.gripper_init_y) / ROBOT_STEP) * (i + 1)) + int(self.image_36H11_all_h / 2)
+                        px1 = int(self.robot_px + ((self.gripper_final_x - self.robot_px) / ROBOT_STEP) * i)
+                        py1 = int(self.robot_py + ((self.gripper_final_y - self.robot_py) / ROBOT_STEP) * i)
+                        px2 = int(self.robot_px + ((self.gripper_final_x - self.robot_px) / ROBOT_STEP) * (i + 1))
+                        py2 = int(self.robot_py + ((self.gripper_final_y - self.robot_py) / ROBOT_STEP) * (i + 1))
                         cv2.arrowedLine(self.white_background, (px1, py1), (px2, py2), (255, 0, 0), 2)
 
+                # === 3. Verifica se chegou no destino ===
+                if (
+                    abs(self.robot_px - self.gripper_final_x) <= 2 and
+                    abs(self.robot_py - self.gripper_final_y) <= 2
+                ):
+                    self.current_state = State.OBSERVATION
 
 
 
+            # elif(self.current_state==State.WAIT_ROBOTMOVING):
 
-
-
-
-
-
-
-
-
-
-            #   gostaria na verdade de fazer algo na linha de:
-            #   for i in range(1,ROBOT_STEP+1):
-                    # if(i%2!=0):
-            #           "plot self.image_gripper em (self.robot_pose.pose.position.x,self.robot_pose.pose.position.y)"
-
-
-            #     self.white_background[(self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))):(self.image_gripper_h+self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))),  
-            #         (self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1)))):(self.image_gripper_w+self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1))))] = self.image_gripper
+            #     elapsed_time = time() - self.start_time
                 
+            #     for i in range(1,ROBOT_STEP+1):
+            #         if(i%2!=0):
+            #             cv2.arrowedLine(self.white_background,(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*i)+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*i)+int(self.image_36H11_all_h/2)),(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_h/2)),(255,0,0),2)
 
-                for i in range(1,ROBOT_STEP+1):
-                    if(i%2!=0):
-                        cv2.arrowedLine(self.white_background,(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*i)+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*i)+int(self.image_36H11_all_h/2)),(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_h/2)),(255,0,0),2)
-
-                if(self.old_state==State.PICK):
-                    self.time_wait=18
-                    cv2.circle(self.white_background, (self.old_target_x, self.old_target_y+OVERSHOOT_Y), int(0.08*self.interface_height), (255, 0, 0), 15)
-                if(self.old_state==State.PLACE):
-                    self.time_wait=18
-                    cv2.circle(self.white_background, (self.old_target_x, self.old_target_y+OVERSHOOT_Y), int(0.08*self.interface_height), (0, 0, 255), 15)
-                if(self.old_state==State.TEXT_MOVE):
-                    self.time_wait=5
+            #     if(self.old_state==State.PICK):
+            #         self.time_wait=18
+            #         cv2.circle(self.white_background, (self.old_target_x, self.old_target_y+OVERSHOOT_Y), int(0.08*self.interface_height), (255, 0, 0), 15)
+            #     if(self.old_state==State.PLACE):
+            #         self.time_wait=18
+            #         cv2.circle(self.white_background, (self.old_target_x, self.old_target_y+OVERSHOOT_Y), int(0.08*self.interface_height), (0, 0, 255), 15)
+            #     if(self.old_state==State.TEXT_MOVE):
+            #         self.time_wait=5
 
                 
-                cv2.circle(self.white_background, (target_x, target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 255), 15)
+            #     cv2.circle(self.white_background, (target_x, target_y+OVERSHOOT_Y), int(self.gaze_circle_proportion*self.interface_height), (0, 0, 255), 15)
 
-                if( abs(self.robot_pose.pose.position.x-self.robot_pose_desired.pose.position.x)<=0.01 and abs(self.robot_pose.pose.position.y-self.robot_pose_desired.pose.position.y)<=0.01 and elapsed_time>=self.time_wait) :
+            #     if( abs(self.robot_pose.pose.position.x-self.robot_pose_desired.pose.position.x)<=0.01 and abs(self.robot_pose.pose.position.y-self.robot_pose_desired.pose.position.y)<=0.01 and elapsed_time>=self.time_wait) :
 
-                    self.gripper_init_x=self.gripper_final_x
-                    self.gripper_init_y=self.gripper_final_y
+            #         self.gripper_init_x=self.gripper_final_x
+            #         self.gripper_init_y=self.gripper_final_y
 
-                    #TO PREVENT FROM BREAKING
-                    if(self.gripper_init_x>=(self.interface_width-int(self.gripper_proportion*self.interface_width))):
-                        self.gripper_init_x=(self.interface_width-int(self.gripper_proportion*self.interface_width))
+            #         #TO PREVENT FROM BREAKING
+            #         if(self.gripper_init_x>=(self.interface_width-int(self.gripper_proportion*self.interface_width))):
+            #             self.gripper_init_x=(self.interface_width-int(self.gripper_proportion*self.interface_width))
 
-                    if(self.gripper_init_y>=(self.interface_height-int(self.gripper_proportion*self.interface_height))):
-                        self.gripper_init_y=(self.interface_width-int(self.gripper_proportion*self.interface_height))
+            #         if(self.gripper_init_y>=(self.interface_height-int(self.gripper_proportion*self.interface_height))):
+            #             self.gripper_init_y=(self.interface_width-int(self.gripper_proportion*self.interface_height))
                     
-                    self.current_state=State.OBSERVATION
+            #         self.current_state=State.OBSERVATION
                     
         cv2.imshow("Interface", self.white_background)
 
@@ -538,6 +521,37 @@ class VisualInterfaceNode(Node):
             self.current_state=State.OBSERVATION
             self.choice=State.PLACE
 
+    def draw_gripper_at_pose(self):
+        """
+        Desenha o gripper com base na pose atual do robô, assumindo que os valores de posição
+        estão diretamente em pixels (não há conversão de escala).
+        """
+
+        # Extrair coordenadas da pose atual
+        x_px = int(self.robot_pose.pose.position.x)
+        y_px = int(self.robot_pose.pose.position.y)
+
+        # Salva como atributos da classe para uso em outros estados
+        self.robot_px = x_px
+        self.robot_py = y_px
+        
+        # Calcular o canto superior esquerdo para centralizar o gripper
+        x1 = x_px - self.image_gripper_w // 2
+        y1 = y_px - self.image_gripper_h // 2
+        x2 = x1 + self.image_gripper_w
+        y2 = y1 + self.image_gripper_h
+
+        # Checagem de limites da interface
+        if (x1 < 0 or y1 < 0 or x2 > self.interface_width or y2 > self.interface_height):
+            self.get_logger().info(f"[visual_interface_node]: Posição do robô fora da interface: x1: {x1}, x2: {x2}, y1: {y1}, y2: {y2}")
+            return
+
+        # Debug info
+        # self.get_logger().info(f"[visual_interface_node]: Desenhando robô em {x_px}, {y_px}")
+        # self.get_logger().info(f"[visual_interface_node]: x1: {x1}, x2: {x2}, y1: {y1}, y2: {y2}")
+
+        # Desenhar imagem do gripper na posição calculada
+        self.white_background[y1:y2, x1:x2] = self.image_gripper
 
 
     def declaring_apriltags_and_variables(self):
@@ -623,9 +637,9 @@ class VisualInterfaceNode(Node):
         self.white_background[(int(self.interface_height/2-self.image_logo_h/2)):((int(self.interface_height/2+self.image_logo_h/2))), self.w_distance:self.image_logo_w+self.w_distance]=self.image_logo
         self.white_background[(int(self.interface_height/2-self.image_logo_h/2)):((int(self.interface_height/2+self.image_logo_h/2))), (self.white_background_w-self.image_logo_w-self.w_distance):(self.white_background_w-self.w_distance)]=self.image_logo
 
-        #Inserting robot image
-        self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper
-        #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
+        # #Inserting robot image  
+        # self.white_background[self.gripper_init_y:(self.image_gripper_h+self.gripper_init_y), self.gripper_init_x:(self.image_gripper_w+self.gripper_init_x)] = self.image_gripper  
+        # #self.white_background[(self.gripper_init_y-int(self.image_gripper_h/2)):(int(self.image_gripper_h/2)+self.gripper_init_y), (self.gripper_init_x-int(self.image_gripper_w/2)):(int(self.image_gripper_w/2)+self.gripper_init_x)] = self.image_gripper
 
     
         #Conversion to real world 
