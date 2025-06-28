@@ -424,43 +424,22 @@ class VisualInterfaceNode(Node):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
             elif(self.current_state==State.WAIT_ROBOTMOVING):
 
                 elapsed_time = time() - self.start_time
-
-            #     self.white_background[(self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))):(self.image_gripper_h+self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))),  
-            #         (self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1)))):(self.image_gripper_w+self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1))))] = self.image_gripper
                 
 
-            # #   gostaria na verdade de fazer algo na linha de:
-            # #   for i in range(1,ROBOT_STEP+1):
-            #         # if(i%2!=0):
-            # #           "plot self.image_gripper em (self.robot_pose.pose.position.x,self.robot_pose.pose.position.y)"
 
-            #     for i in range(1,ROBOT_STEP+1):
-            #         if(i%2!=0):
-            #             cv2.arrowedLine(self.white_background,(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*i)+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*i)+int(self.image_36H11_all_h/2)),(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_h/2)),(255,0,0),2)
-                
+
+
+
+
+
+
+
+
+
                 # === 1. Calcular coordenadas da interface (px) ===
                 offset_x = self.w_distance + self.image_36H11_all_w / 2
                 offset_y = self.h_distance + self.image_36H11_all_h / 2
@@ -497,6 +476,32 @@ class VisualInterfaceNode(Node):
                         py2 = int(self.gripper_init_y + ((self.gripper_final_y - self.gripper_init_y) / ROBOT_STEP) * (i + 1)) + int(self.image_36H11_all_h / 2)
                         cv2.arrowedLine(self.white_background, (px1, py1), (px2, py2), (255, 0, 0), 2)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            #   gostaria na verdade de fazer algo na linha de:
+            #   for i in range(1,ROBOT_STEP+1):
+                    # if(i%2!=0):
+            #           "plot self.image_gripper em (self.robot_pose.pose.position.x,self.robot_pose.pose.position.y)"
+
+
+            #     self.white_background[(self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))):(self.image_gripper_h+self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(1)))),  
+            #         (self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1)))):(self.image_gripper_w+self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(1))))] = self.image_gripper
+                
+
+                for i in range(1,ROBOT_STEP+1):
+                    if(i%2!=0):
+                        cv2.arrowedLine(self.white_background,(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*i)+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*i)+int(self.image_36H11_all_h/2)),(self.gripper_init_x+int(((self.gripper_final_x-self.gripper_init_x)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_w/2),self.gripper_init_y+int(((self.gripper_final_y-self.gripper_init_y)/(ROBOT_STEP))*(i+1))+int(self.image_36H11_all_h/2)),(255,0,0),2)
 
                 if(self.old_state==State.PICK):
                     self.time_wait=18

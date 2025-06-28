@@ -38,6 +38,7 @@ setup(
         'einstein_visual_interface=apriltags_pkg.einstein_visual_interface:main',
         'real_eyetracker_publisher=apriltags_pkg.real_eyetracker_publisher:main',
         'test_perspective_eyetracker=apriltags_pkg.test_perspective_eyetracker:main',
+        'cursor_position_publisher = apriltags_pkg.cursor_position_publisher:main',
         'mock_cursor_eyetracker_publisher = apriltags_pkg.mock_cursor_eyetracker_publisher:main',
         'mock_robot_pose_publisher = apriltags_pkg.mock_robot_pose_publisher:main',
         ],

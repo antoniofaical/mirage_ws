@@ -11,6 +11,7 @@ setup.py
 ../../build/apriltags_pkg/apriltags_pkg.egg-info/zip-safe
 apriltags_pkg/__init__.py
 apriltags_pkg/cameracalibration.py
+apriltags_pkg/cursor_position_publisher.py
 apriltags_pkg/dummy_publisher_eyetracker.py
 apriltags_pkg/einstein_visual_interface.py
 apriltags_pkg/mock_cursor_eyetracker_publisher.py

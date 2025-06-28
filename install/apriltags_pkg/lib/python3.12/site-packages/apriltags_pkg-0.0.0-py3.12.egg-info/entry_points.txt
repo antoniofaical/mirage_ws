@@ -1,4 +1,5 @@
 [console_scripts]
+cursor_position_publisher = apriltags_pkg.cursor_position_publisher:main
 dummy_publisher_eyetracker = apriltags_pkg.dummy_publisher_eyetracker:main
 einstein_visual_interface = apriltags_pkg.einstein_visual_interface:main
 mock_cursor_eyetracker_publisher = apriltags_pkg.mock_cursor_eyetracker_publisher:main
